@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  background-image: url(./images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+}
+.img-sign {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.img-circle {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+h1 {
+  position: absolute;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #293356;
+  top: 40px;
+}
+.sign-up {
+  position: absolute;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 23px;
+  text-align: center;
+  color: #848ead;
+  top: 75px;
+  width: 190px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 327px;
+  height: 478px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+}
+
+.price {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.71429px;
+  text-transform: uppercase;
+  color: #848ead;
+  order: 1;
+}
+.monthly {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  order: 3;
+}
+
+.dollar {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: right;
+  letter-spacing: -0.8px;
+  color: #293356;
+}
+.month {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #848ead;
+}
+.circle-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.billing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  order: 3;
+}
+.bill {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #848ead;
+}
+
+.big-circle {
+  margin-right: 10px;
+  margin-left: 10px;
+  background: #cfd8ef;
+  border-radius: 15px;
+  width: 43px;
+  height: 22px;
+  position: relative;
+}
+.small {
+  background: #ffffff;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-left: 5px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.discount {
+  display: none;
+}
+.percent {
+  width: 41px;
+  height: 19px;
+  border-radius: 9.5px;
+  background: #feede8;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  color: #ff8d68;
+  padding-top: 3px;
+  margin-left: 10px;
+}
+
+.hr {
+  width: 327px;
+  height: 1px;
+  background: #ecf0fb;
+  order: 3;
+}
+.check {
+  display: flex;
+  flex-direction: column;
+  order: 3;
+}
+.icon-check {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.data {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #848ead;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+button {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 170px;
+  height: 41px;
+  background: #293356;
+  border-radius: 20.5px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #becdff;
+  order: 3;
+  border: none;
+}
+.btn-check {
+  order: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gray-line {
+  background: #10d8c4;
+  border-radius: 5px 0px 0px 5px;
+  width: 120px;
+  height: 8px;
+  transform: translateY(14px);
+  border: none;
+  outline: none;
+
+  margin-top: 6.5px;
+}
+
+.range {
+  background-color: #ecf0fb;
+  appearance: none;
+  width: 279px;
+  height: 8px;
+  border-radius: 5px;
+  outline: none;
+
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.range:hover {
+  opacity: 1;
+}
+.range::-webkit-slider-thumb {
+  z-index: 2;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  position: relative;
+  background: url(./images/icon-slider.svg) no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+.range::-webkit-slider-thumb {
+  background-color: #10d8c4;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+}
+
+.range::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+}
+
+.circle-don {
+  margin-left: 25px;
+}
+.circle-up {
+  background-color: #7aeadf;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////
+                                 @media (min-width: 1210px) 
+///////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media (min-width: 1210px) {
+  h1 {
+    font-size: 28px;
+    line-height: 38px;
+    top: 80px;
+  }
+  .sign-up {
+    font-size: 15px;
+    line-height: 20px;
+    width: auto;
+    top: 130px;
+  }
+  section {
+    width: 540px;
+    height: 397px;
+    position: relative;
+  }
+  .monthly {
+    order: -1;
+    position: absolute;
+    right: 60px;
+    top: 25px;
+  }
+  .price {
+    font-size: 14px;
+    line-height: 19px;
+    position: absolute;
+    top: 40px;
+    left: 48px;
+  }
+  .dollar {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .circle-line {
+    margin-top: 20px;
+  }
+  .line {
+    width: 444px;
+  }
+  .billing {
+    margin-left: 75px;
+  }
+  .percent {
+    display: none;
+  }
+  .discount {
+    display: block;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    width: 80px;
+    height: 19px;
+    color: #ff8d68;
+    background: #feede8;
+    margin-left: 9px;
+    border-radius: 9.5px;
+    padding-top: 2px;
+  }
+  .hr {
+    width: 540px;
+  }
+
+  .btn-check {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 444px;
+  }
+  .gray-line {
+    width: 50%;
+  }
+  .range {
+    width: 444px;
+  }
+}

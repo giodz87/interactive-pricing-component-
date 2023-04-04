@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="img-sign">
+        <img class="img-circle" src="./images/pattern-circles.svg" alt="" />
+        <h1>Simple, traffic-based pricing</h1>
+
+        <p class="sign-up">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+      </div>
+    </nav>
+    <section>
+      <div>
+        <p id="pageviews" class="price">100K PAGEVIEWS</p>
+      </div>
+      <div class="monthly">
+        <p id="dollar-price" class="dollar">$16.00</p>
+        <p class="month">/ month</p>
+      </div>
+      <div id="circle-line" >
+        <!-- <div class="line"></div> -->
+        <!-- <p class="slider-circle"> -->
+          <div id="colore-line" class="gray-line"></div>
+          <input
+            id="thumb-range"
+            class="range"
+            type="range"
+            min="1"
+            max="5"
+           
+          />
+          
+        </p>
+      </div>
+
+      <div class="billing">
+        <p class="bill">Monthly Billing</p>
+        <div>
+          <div id="main-circle" class="big-circle"><div id="small-circle" class="small"></div></div>
+        </div>
+        <p class="bill">Yearly Billing</p>
+        <p class="percent">25%</p>
+        <p class="discount">25% discount</p>
+      </div>
+
+      <div class="hr"></div>
+      <div class="btn-check">
+        <div class="check">
+          <div class="icon-check">
+            <img src="./images/icon-check.svg" alt="" />
+            <p class="data">Unlimited websites</p>
+          </div>
+          <div class="icon-check">
+            <img src="./images/icon-check.svg" alt="" />
+            <p class="data">100% data ownership</p>
+          </div>
+          <div class="icon-check">
+            <img src="./images/icon-check.svg" alt="" />
+            <p class="data">Email reports</p>
+          </div>
+        </div>
+        <button id="btn">Start my trial</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
